@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">Credit Card Fraud Detection</title>
+  <desc id="desc">A dark fintech banner with an emerald precision-recall curve and a metallic credit card dissolving into data particles.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050a10"/>
+      <stop offset="0.55" stop-color="#08111c"/>
+      <stop offset="1" stop-color="#0b1a22"/>
+    </linearGradient>
+
+    <radialGradient id="glowEmerald" cx="0.72" cy="0.45" r="0.5">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#10b981" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowCyan" cx="0.18" cy="0.12" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6ee7b7"/>
+      <stop offset="0.55" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="cardFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172435"/>
+      <stop offset="0.45" stop-color="#0d1926"/>
+      <stop offset="1" stop-color="#132b33"/>
+    </linearGradient>
+
+    <linearGradient id="cardEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#334155" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbbf24"/>
+      <stop offset="0.5" stop-color="#d97706"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+
+    <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="divider" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.28"/>
+    </pattern>
+
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#34d399" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="520" fill="url(#bg)"/>
+  <rect width="1600" height="520" fill="url(#grid)"/>
+  <rect width="1600" height="520" fill="url(#glowCyan)"/>
+  <rect width="1600" height="520" fill="url(#glowEmerald)"/>
+  <rect x="860" y="0" width="740" height="520" fill="url(#dots)" opacity="0.7"/>
+
+  <!-- Hairline frame -->
+  <rect x="24" y="24" width="1552" height="472" rx="20" fill="none" stroke="#1e293b" stroke-opacity="0.7"/>
+  <path d="M24 96 H1576" stroke="#1e293b" stroke-opacity="0.45"/>
+
+  <!-- Eyebrow -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="3.2" fill="#64748b">
+    <circle cx="92" cy="64" r="4" fill="#34d399"/>
+    <text x="108" y="68">END-TO-END MACHINE LEARNING</text>
+    <text x="1510" y="68" text-anchor="end" fill="#334155">JUPYTER · SCIKIT-LEARN · IMBALANCED-LEARN</text>
+  </g>
+
+  <!-- Headline -->
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="88" y="188" font-size="70" font-weight="750" letter-spacing="-2.4" fill="#f8fafc">CREDIT CARD</text>
+    <text x="88" y="260" font-size="70" font-weight="750" letter-spacing="-2.4" fill="url(#accent)">FRAUD DETECTION</text>
+    <text x="91" y="310" font-size="21" font-weight="400" fill="#94a3b8">Catching the 0.17% that matter — no leakage, no accuracy traps.</text>
+
+    <!-- Metrics -->
+    <g>
+      <text x="91" y="382" font-size="30" font-weight="700" fill="#f8fafc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">0.8472</text>
+      <text x="91" y="402" font-size="10.5" letter-spacing="2.2" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">PR-AUC · RANDOM FOREST</text>
+
+      <line x1="292" y1="356" x2="292" y2="410" stroke="#1e293b"/>
+
+      <text x="322" y="382" font-size="30" font-weight="700" fill="#f8fafc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">0.8163</text>
+      <text x="322" y="402" font-size="10.5" letter-spacing="2.2" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">RECALL @ THRESHOLD 0.37</text>
+
+      <line x1="546" y1="356" x2="546" y2="410" stroke="#1e293b"/>
+
+      <text x="576" y="382" font-size="30" font-weight="700" fill="#f8fafc" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">284,807</text>
+      <text x="576" y="402" font-size="10.5" letter-spacing="2.2" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">TRANSACTIONS · 492 FRAUDS</text>
+    </g>
+
+    <!-- Sparkline removed for breathing room -->
+  </g>
+
+  <!-- Vertical divider -->
+  <line x1="802" y1="104" x2="802" y2="428" stroke="url(#divider)" stroke-width="1"/>
+
+  <!-- Decorative rings -->
+  <g fill="none" stroke="#22d3ee" stroke-opacity="0.12">
+    <circle cx="1238" cy="252" r="220"/>
+    <circle cx="1238" cy="252" r="258"/>
+  </g>
+
+  <!-- Credit card -->
+  <g transform="translate(1204 258) rotate(-8)">
+    <ellipse cx="0" cy="178" rx="255" ry="26" fill="#020617" opacity="0.65"/>
+
+    <rect x="-244" y="-158" width="488" height="308" rx="28" fill="#020617" opacity="0.55" transform="translate(8 10)"/>
+    <rect x="-244" y="-158" width="488" height="308" rx="28" fill="url(#cardFace)" stroke="url(#cardEdge)" stroke-width="1.5"/>
+
+    <!-- subtle card grid -->
+    <g opacity="0.35">
+      <path d="M-244 -80 H244 M-244 0 H244 M-244 80 H244" stroke="#1e293b" stroke-width="1"/>
+      <path d="M-150 -158 V150 M-50 -158 V150 M50 -158 V150 M150 -158 V150" stroke="#1e293b" stroke-width="1"/>
+    </g>
+
+    <!-- top row -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+      <text x="-208" y="-112" font-size="12" letter-spacing="2.6" fill="#94a3b8">FRAUD SIGNAL PLATFORM</text>
+      <circle cx="196" cy="-117" r="4" fill="#34d399"/>
+      <text x="208" y="-112" font-size="9" letter-spacing="1.8" fill="#4ade80">LIVE</text>
+    </g>
+
+    <!-- chip -->
+    <g transform="translate(-201 -55)">
+      <rect width="58" height="44" rx="8" fill="url(#chip)"/>
+      <path d="M0 14 H58 M0 30 H58 M19 0 V44 M39 0 V44" stroke="#92400e" stroke-opacity="0.55" stroke-width="1"/>
+    </g>
+
+    <!-- contactless -->
+    <g transform="translate(-116 -52)" fill="none" stroke="#64748b" stroke-width="2.4" stroke-linecap="round">
+      <path d="M0 8 C8 16 8 28 0 36"/>
+      <path d="M10 0 C22 12 22 32 10 44"/>
+      <path d="M20 -8 C36 8 36 36 20 52"/>
+    </g>
+
+    <!-- number -->
+    <text x="-208" y="44" font-size="25" letter-spacing="3.4" fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">5241 •••• •••• 2847</text>
+
+    <!-- bottom row -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+      <text x="-208" y="92" font-size="9" letter-spacing="1.8" fill="#64748b">CARDHOLDER</text>
+      <text x="-208" y="112" font-size="14" letter-spacing="1.8" fill="#cbd5e1">ARYAN MENDPARA</text>
+
+      <text x="40" y="92" font-size="9" letter-spacing="1.8" fill="#64748b">VALID THRU</text>
+      <text x="40" y="112" font-size="14" letter-spacing="1.8" fill="#cbd5e1">12/28</text>
+
+      <text x="142" y="92" font-size="9" letter-spacing="1.8" fill="#64748b">NETWORK</text>
+      <text x="142" y="112" font-size="14" letter-spacing="1.8" fill="#34d399">SECURE</text>
+    </g>
+
+    <!-- holographic orb -->
+    <circle cx="190" cy="102" r="24" fill="#22d3ee" opacity="0.10"/>
+    <circle cx="190" cy="102" r="16" fill="#34d399" opacity="0.16"/>
+    <circle cx="190" cy="102" r="8" fill="#6ee7b7" opacity="0.3"/>
+  </g>
+
+  <!-- Dissolving data particles -->
+  <g fill="#34d399">
+    <circle cx="1460" cy="120" r="2.5" opacity="0.9"/>
+    <circle cx="1502" cy="160" r="1.8" opacity="0.6"/>
+    <circle cx="1478" cy="210" r="3" opacity="0.75"/>
+    <circle cx="1530" cy="250" r="2" opacity="0.5"/>
+    <circle cx="1490" cy="320" r="2.2" opacity="0.65"/>
+    <circle cx="1540" cy="360" r="1.4" opacity="0.45"/>
+    <circle cx="1420" cy="410" r="2" opacity="0.5"/>
+    <circle cx="1560" cy="300" r="1.6" opacity="0.35"/>
+  </g>
+  <g fill="#22d3ee">
+    <circle cx="1452" cy="180" r="1.4" opacity="0.6"/>
+    <circle cx="1516" cy="110" r="1.2" opacity="0.5"/>
+    <circle cx="1506" cy="390" r="1.6" opacity="0.4"/>
+    <circle cx="1435" cy="70" r="1.3" opacity="0.4"/>
+  </g>
+
+  <!-- Bottom accent -->
+  <rect x="88" y="452" width="96" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="200" y="459" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="2.4" fill="#475569">LEAKAGE-SAFE · REPRODUCIBLE · EXPLAINABLE</text>
+</svg>

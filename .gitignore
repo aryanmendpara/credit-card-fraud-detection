@@ -1,0 +1,15 @@
+# --- Data (never commit the 150 MB Kaggle CSV) ---
+creditcard.csv
+data/
+
+# --- Notebook / Python artifacts ---
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
