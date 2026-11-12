@@ -34,13 +34,13 @@ The public Kaggle dataset contains **284,807** European card transactions and **
 |---:|---:|---:|---:|
 | 284,807 | 492 | 0.1727% | ≈ 578 : 1 |
 
-If `creditcard.csv` is missing, the notebook generates a **50,000-row synthetic fallback** with the same schema and ~0.2% fraud, so it still runs end to end.
+The notebook requires `creditcard.csv` in the project root. Download it from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) before running.
 
 ## The pipeline
 
 ```mermaid
 flowchart TD
-    A["creditcard.csv<br/>or synthetic fallback"] --> B["Stratified 80 / 20 split"]
+    A["creditcard.csv<br/>284,807 × 31"] --> B["Stratified 80 / 20 split"]
     B -->|"train"| C["ColumnTransformer<br/>RobustScaler(Time, Amount)<br/>V1–V28 passthrough"]
     C --> D["RandomForestClassifier<br/>100 trees · balanced_subsample"]
     B -->|"test — untouched"| E["Held-out evaluation"]
@@ -139,7 +139,7 @@ Download [`creditcard.csv`](https://www.kaggle.com/datasets/mlg-ulb/creditcardfr
 - **PR-AUC over accuracy.** It measures ranking quality on the fraud class instead of rewarding the majority class.
 - **Default `0.5` threshold.** If precision/recall needs to shift later, tune the threshold against real cost assumptions — not in this minimal baseline.
 
-**Limitations:** the split is random rather than time-based, the threshold is the default, and the synthetic fallback is for demonstration only.
+**Limitations:** the split is random rather than time-based, and the threshold is the default.
 
 ---
 
